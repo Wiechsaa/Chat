@@ -2,7 +2,7 @@
 <p>Find me in app/views/pages/home.html.erb</p>
 
 <% if current_user %>
-  <%= button_to "Start chatting", "#" %>
+  <%= button_to "Start chatting", rooms_path, method: :get %>
   <%= button_to "Logout", destroy_user_session_path, method: :destroy %>
 <% else %>
   <%= button_to "Login", new_user_session_path, method: :get %>
