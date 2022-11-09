@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   end
 
   get 'user/:id', to: 'users#show', as: 'user'
-  resources :rooms
+  resources :rooms do
+    resources :messages
+  end
 end
