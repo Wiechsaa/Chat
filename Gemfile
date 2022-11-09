@@ -20,6 +20,8 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # gem "sassc-rails"
 
+gem "devise"
+
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
