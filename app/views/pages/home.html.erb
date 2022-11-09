@@ -1,0 +1,10 @@
+<h1>Chat</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+
+<% if current_user %>
+  <%= button_to "Start chatting", "#" %>
+  <%= button_to "Logout", destroy_user_session_path, method: :destroy %>
+<% else %>
+  <%= button_to "Login", new_user_session_path, method: :get %>
+  <%= button_to "Sign up", new_user_registration_path, method: :get %>
+<% end %>
