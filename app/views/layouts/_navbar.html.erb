@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <% if current_user %>
-          <p><%= "Logged as #{current_user.email}" %></p>
+          <p class="text-light" style="padding-top: 5px"><%= "Logged as #{current_user.email}" %></p>
           <li class="nav-item">
             <%= link_to "Start chatting", rooms_path, method: :get, class: "nav-link active" %>
           </li>
