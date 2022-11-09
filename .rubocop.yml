@@ -1,0 +1,9 @@
+require: rubocop-rails
+Documentation:
+  Enabled: false
+AllCops:
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'config/initializers/*'
+    - 'bin/*'

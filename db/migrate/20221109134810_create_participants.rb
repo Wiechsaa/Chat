@@ -1,11 +1,8 @@
-# frozen_string_literal: true
-
-class CreateMessages < ActiveRecord::Migration[7.0]
+class CreateParticipants < ActiveRecord::Migration[7.0]
   def change
-    create_table :messages do |t|
+    create_table :participants do |t|
       t.references :user, null: false, foreign_key: true
       t.references :room, null: false, foreign_key: true
-      t.text :body
 
       t.timestamps
     end
