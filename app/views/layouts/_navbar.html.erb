@@ -9,11 +9,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <% if current_user %>
-          <p class="text-light" style="padding-top: 5px"><%= "Logged as #{current_user.email}" %></p>
-          <li class="nav-item">
-            <%= link_to "Start chatting", rooms_path, method: :get, class: "nav-link active" %>
+          <li class="text-light" style="padding-top: 5px; padding-left: 5px">
+            <%= "Logged as #{current_user.email}" %>
           </li>
-          <li>
+          <li class="nav-item">
+            <%= link_to "Start Chatting", rooms_path, method: :get, class: "nav-link active" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Edit Account", edit_user_registration_path, method: :get, class: "nav-link active" %>
+          </li>
+          <li class="nav-item">
             <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-dark" %>
           </li>
         <% else %>
