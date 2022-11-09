@@ -6,7 +6,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # Ruby and Rails
 ruby '3.1.2'
 gem 'bootsnap', require: false
-gem 'image_processing', '~> 1.2'
 gem 'jbuilder'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
@@ -20,6 +19,10 @@ gem 'importmap-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 # gem "sassc-rails"
+
+# Files
+gem 'image_processing', '~> 1.2'
+gem "mini_magick"
 
 gem 'devise'
 gem 'rubocop-rails', require: false
