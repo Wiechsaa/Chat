@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'users/show'
   root 'pages#home'
+
   devise_for :users
   devise_scope :user do
     get 'users', to: 'devise/sessions#new'

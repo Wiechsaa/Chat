@@ -13,43 +13,40 @@
  *= require_tree .
  *= require_self
  */
-
  body {
   overflow: hidden;
 }
-
 .msg-form {
   width: 100%;
   height: 56px;
   padding: 10px;
 }
 
-#single-room {
+#single_room {
   height: calc(100vh - 150px);
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #messages {
-  height: calc(100vh - 250px);
+  height: calc(100vh - 150px);
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
-#room-container {
+#room_container {
   height: 100vh;
+  margin-right: 0px !important;
 }
 
-#side-panel {
+#side_panel {
   height: 100vh;
+  margin-right: 0px !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
   margin-bottom: 55px;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
-
-#chatroom-container {
+#chatroom_container {
   height: 100vh;
-  width: 100%;
+  margin-right: 0px !important;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -58,7 +55,6 @@
   width: 80%;
   margin-right: 5px;
 }
-
 .message-box {
   word-wrap: break-word;
   width: fit-content;
@@ -66,6 +62,18 @@
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: #555;
+  background-color: #555555;
   padding: 10px;
+}
+
+#logout-button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
 }
