@@ -15,9 +15,11 @@ module Users
     # end
 
     # DELETE /resource/sign_out
-    # def destroy
-    #   super
-    # end
+    def destroy
+      ActionCable.server.remote_connections.where(current_user:).disconnect
+      current_user.update(status: User.statuses[:offline])
+      super
+    end
 
     # protected
 
