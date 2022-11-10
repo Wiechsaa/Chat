@@ -22,7 +22,7 @@ gem 'turbo-rails'
 
 # Files
 gem 'image_processing', '~> 1.2'
-gem "mini_magick"
+gem 'mini_magick'
 
 gem 'devise'
 gem 'rubocop-rails', require: false

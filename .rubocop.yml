@@ -6,4 +6,5 @@ AllCops:
     - 'db/schema.rb'
     - 'db/migrate/*'
     - 'config/initializers/*'
+    - 'config/environments/*'
     - 'bin/*'
